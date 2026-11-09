@@ -1,4 +1,4 @@
-<a href="https://github.com/PatterAI/Patter"><img src="assets/hero.svg" width="100%" alt="Francesco Rosciano. Building Patter: give your AI agent a phone number."></a>
+<a href="https://github.com/PatterAI/Patter"><img src="assets/hero.svg" width="100%" alt="Building Patter: give your AI agent a phone number."></a>
 
 I'm building **[Patter](https://github.com/PatterAI/Patter)**, the open-source voice AI SDK that gives your AI agent a phone number in 4 lines of code. Python and TypeScript, MIT licensed, and it runs on Twilio, Telnyx, and Plivo. Patter is the Vapi and Retell alternative for builders who want to own the stack.
 

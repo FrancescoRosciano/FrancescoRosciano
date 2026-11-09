@@ -171,8 +171,7 @@ def hero():
     band = [f'<rect y="{band_y + band_h}" width="{W}" height="8" fill="#000" opacity=".35"/>',
             f'<rect y="{band_y}" width="{W}" height="{band_h}" fill="{RED}"/>',
             f'<rect y="{band_y}" width="{W}" height="2" fill="#fff" opacity=".18"/>',
-            ARCH.path(name, 72, base, size, WHITE),
-            ARCH.path(name, 72 + nw + 220, base, size, WHITE)]  # station names repeat along the band
+            ]
 
     sub_base = 314
     lead = "Building Patter"
@@ -240,7 +239,7 @@ def hero():
     style = ("@keyframes drop{from{transform:translateY(-70px);opacity:0}}"
              ".t{animation:drop 1s cubic-bezier(.16,1,.3,1) both}.t1{animation-delay:.15s}.t2{animation-delay:.35s}.t3{animation-delay:.55s}")
     body = "".join(wall + band + caption + poster + left + stack)
-    return svg(W, H, "Francesco Rosciano. Building Patter: give your AI agent a phone number.", defs, body, style)
+    return svg(W, H, "Building Patter: give your AI agent a phone number.", defs, body, style)
 
 
 def lines():
