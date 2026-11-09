@@ -159,7 +159,7 @@ def tile_word(word, s):
 
 
 def hero():
-    W, H = 1600, 960
+    W, H = 1600, 760
     band_y, band_h, size = 72, 160, 100
     name = "Francesco Rosciano"
     base = band_y + band_h / 2 + ARCH.cap * size / 2
@@ -173,7 +173,7 @@ def hero():
             f'<rect y="{band_y}" width="{W}" height="2" fill="#fff" opacity=".18"/>',
             ]
 
-    sub_base = 314
+    sub_base = 114
     lead = "Building Patter"
     lw = ARCH.width(lead, 44)
     tail = "open-source voice AI for real phone lines"
@@ -182,7 +182,7 @@ def hero():
                ARCH.path(tail, 72 + lw + 52, sub_base, 44, "#a7adb0")]
 
     # Poster in an aluminium frame
-    fx, fy, fw, fh, b = 72, 362, 1456, 538, 10
+    fx, fy, fw, fh, b = 72, 162, 1456, 538, 10
     px, py, pw, ph = fx + b, fy + b, fw - 2 * b, fh - 2 * b
     split = px + 772
     poster = [f'<rect x="{fx}" y="{fy}" width="{fw}" height="{fh}" rx="5" fill="#b8bbbc" filter="url(#shadow)"/>',
@@ -238,7 +238,7 @@ def hero():
             f'<pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="14" cy="14" r="2.4" fill="{DOT}"/></pattern>')
     style = ("@keyframes drop{from{transform:translateY(-70px);opacity:0}}"
              ".t{animation:drop 1s cubic-bezier(.16,1,.3,1) both}.t1{animation-delay:.15s}.t2{animation-delay:.35s}.t3{animation-delay:.55s}")
-    body = "".join(wall + band + caption + poster + left + stack)
+    body = "".join(wall + caption + poster + left + stack)
     return svg(W, H, "Building Patter: give your AI agent a phone number.", defs, body, style)
 
 
